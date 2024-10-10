@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #06283D;
+}
+
+.mosaico {
+    display: grid;
+    grid-template-columns: repeat(4, 150px);
+    grid-template-rows: repeat(3, 150px);
+    gap: 15px;
+    padding: 20px;
+}
+
+.box {
+    background-color: #eee;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.4s ease;
+    
+}
+
+.box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+.box1 {
+    background-color: #ffee00;
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+
+.box2 {
+    background-color: #07a6ac;
+    transition: 0.4s ease;
+}
+
+
+.box3 {
+    background-color: #1eff00;
+    grid-column: span 2;
+}
+
+
+.box4 {
+    background-color: #ff0400;
+}
+
+
+.box5 {
+    background-color: #ff00f2;
+    grid-column: span 3;
+}
+
+.mosaico div:hover{
+    background-color: #ffffff;
+}
